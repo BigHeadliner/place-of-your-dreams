@@ -4,8 +4,120 @@
 @import 'libs';  
 @import 'global';
  
+  
+.header-inner{ 
+  border: 1px solid fuchsia; 
+  margin-left: 120px;   
+  &__left{ 
+    padding-top: 46px;
+  } 
+  &__logo{ 
+    margin-bottom: 101px; 
+    display: block;
+  } 
+   
+  &__title{ 
+    color: $main-title-color; 
+    font-size: 40px; 
+    line-height: 50px; 
+    max-width: 353px; 
+    @extend %lexend-600;  
+    margin-bottom: 25px;     
+    display: block;
+  } 
+    
  
+  &__title-span {
+       color:#FFF; 
+       text-shadow:
+      -1px -1px 0 #1B1C57,  
+       1px -1px 0 #1B1C57,
+      -1px 1px 0 #1B1C57,
+       1px 1px 0 #1B1C57; 
+       @extend %lexend-600; 
+       font-size: 40px;
+    }
+   
+  &__subtitle{ 
+    font-size: 16px; 
+    line-height: 28px; 
+    max-width: 425px; 
+    margin-bottom: 32px;
+  } 
+    
+  &__search{ 
+    border: 1px solid transparent; 
+    max-width: 496px; 
+    height: 56px; 
+    position: relative; 
+    margin-bottom: 32px;
+  }  
+   
+ &__input{  
+    width: 100%;
+    max-width: 496px;    
+    border: 1px solid #E0E3EB; 
+    border-radius: 32px; 
+    height: 56px; 
+    padding: 17px 129px 17px 64px;   
+    @extend %lexend-500; 
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #888B97;
+ }  
+   
+ &__input:focus {  
+    outline: none;
+    border-color: #1b1c57;
+    box-shadow: 0 0 10px #1b1c57;
+ } 
+  
+ &__input-btn{ 
+   width: 109px;   
+   height: 48px;  
+   padding: 13px 44px 13px 16px;
+   border-radius: 32px; 
+   border: 1px solid transparent; 
+   background-color: #10B981; 
+   color:#FFF; 
+   @extend %lexend-600; 
+   font-size: 14px;  
+   line-height: 22px;  
+   position: relative;  
+   position: absolute; 
+   top: 4px; 
+   right: 4px;
+ }  
 
+ &__input-arrow{ 
+   position: absolute;  
+   top: 17px;
+   right: 24px;
+ } 
+  
+ &__location{ 
+   position:absolute; 
+   top: 17px; 
+   left: 27px;
+ }  
+
+ &__partnership{ 
+   @extend %lexend-400; 
+   color: #888B97; 
+   font-size: 16px;  
+   line-height: 32px;
+ }  
+  
+ &__partners{  
+    width: 100%;
+    max-width: 427px;  
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+
+ } 
+
+}
 
 
 @import 'media'; 
