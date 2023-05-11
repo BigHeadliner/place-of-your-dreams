@@ -3,16 +3,19 @@
 @import 'reset';  
 @import 'libs';  
 @import 'global';
- 
   
-.header-inner{ 
-  border: 1px solid fuchsia; 
-  margin-left: 120px;    
+
+  
+.header-inner{  
+  background-image:url('../images/header/header-bg.jpg'); 
+  background-repeat: no-repeat; 
+  padding-left: 120px;
+  border: 1px solid transparent;  
   display: flex; 
 
   &__left{  
     width: 100%; 
-    max-width: 599px;
+    max-width: 719px;
     padding-top: 46px;
   } 
   &__logo{ 
@@ -24,10 +27,11 @@
     color: $main-title-color; 
     font-size: 40px; 
     line-height: 50px; 
-    max-width: 353px; 
+    max-width: 365px; 
     @extend %lexend-600;  
     margin-bottom: 25px;     
-    display: block;
+    display: block; 
+    text-transform: capitalize; 
   } 
     
  
@@ -124,7 +128,7 @@
   
   
  &__right{ 
-   border: 1px solid fuchsia;  
+   border: 1px solid transparent;  
    width: 100%;
    max-width: 720px; 
    padding-top: 40px;  
@@ -296,7 +300,7 @@
   }  
 
   &__slider-wrapper{ 
-     border: 1px solid green;  
+     border: 1px solid transparent;  
      width: 100%;
      max-width: 672px;  
      margin: 0 0 48px 48px;
@@ -326,7 +330,7 @@
 
   &__slide-triple, 
   &__slide{ 
-    //  width: 100%; 
+     width: 100%; 
      width: 328px; 
      height: 104px; 
      border-radius: 32px;  
@@ -338,11 +342,11 @@
   }   
 
   &__slide{  
-    // width: 100%; 
+    width: 100%; 
     width: 202px; 
   } 
    
-  .slide{ 
+  &__slide-wrapper{ 
     padding: 0 8px;
   }  
 
