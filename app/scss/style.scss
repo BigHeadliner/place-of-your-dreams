@@ -355,7 +355,8 @@
 } 
  
 .featured{ 
-  border: 1px solid transparent;
+  border: 1px solid transparent; 
+  margin-bottom: 120px;
 }  
  
 .featured-inner{ 
@@ -565,8 +566,192 @@
   line-height: 22px; 
   color:#888B97; 
   text-transform: capitalize;
+ } 
+ 
 } 
  
+.ready-to-sell{ 
+   
+  &__inner{  
+    width: 100%;
+    max-width: 1200px;   
+    margin: 0 auto; 
+    border: 1px solid pink; 
+    display: flex; 
+    justify-content: space-between;
+  }   
+   
+  &__left{   
+    width: 100%;
+    max-width: 522px;  
+    padding-left: 40px;
+    border: 1px solid fuchsia; 
+    padding-top: 28px;
+  }  
+   
+  &__suptitle{ 
+     margin-bottom: 14px;
+  }
+
+  &__title{ 
+    margin-bottom: 14px;
+  } 
+   
+  &__subtitle{ 
+    @extend %lexend-400;  
+    font-size: 16px; 
+    line-height: 28px; 
+    color:#626687; 
+    margin-bottom: 16px; 
+    max-width: 413px;
+  } 
+    
+  &__detail-title{ 
+    @extend %lexend-600; 
+    font-size: 16px; 
+    line-height: 28px; 
+    color: $main-title-color; 
+    margin-bottom: 16px;
+  }  
+   
+  &__items{ 
+    width: 100%;
+    max-width: 440px; 
+    display: grid; 
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);  
+    grid-row-gap: 16px; 
+    padding-bottom: 37px;  
+    margin-bottom: 29px;
+    border-bottom: 2px solid #F0F3FD;
+  } 
+   
+ &__item{ 
+   border: 1px solid transparent; 
+   width: 100%; 
+   max-width: 220px; 
+   display: flex; 
+   align-items: center;
+ }  
+  
+ &__item-title{ 
+   @extend %lexend-500; 
+   font-size: 16px; 
+   line-height: 20px; 
+   color: #3C4563;
+ }
+  
+ &__item-title--bed{ 
+  margin-left: 20px;
+ } 
+
+ &__item-title--garage{ 
+   margin-left: 23px;
+ }  
+  
+ &__item-title--bath{ 
+   margin-left: 21px;
+ } 
+  
+ &__item-title--floors{ 
+   margin-left: 20px;
+ } 
+   
+ &__contact{ 
+  border: 1px solid transparent;  
+  width: 100%; 
+  max-width: 440px; 
+  display: flex; 
+  justify-content: space-between;
+ }
+
+ &__person{ 
+  border: 1px solid transparent; 
+  padding-left: 56px; 
+  position: relative;
+} 
+ 
+&__person-img{ 
+ position: absolute; 
+ left: 0px; 
+ bottom: 5px;
+} 
+
+&__person-title{ 
+ @extend %lexend-500; 
+ font-size: 18px; 
+ line-height: 24px; 
+ color:#0E1735; 
+ margin-bottom: 4px; 
+ text-transform: capitalize;
+} 
+ 
+&__person-subtitle{ 
+ @extend %lexend-500; 
+ font-size: 14px; 
+ line-height: 22px; 
+ color:#888B97; 
+ text-transform: capitalize;
+}  
+ 
+&__btn{ 
+  background: #10B981; 
+  max-width: 163px; 
+  padding: 13px 16px 13px 56px; 
+  position: relative; 
+  height: 48px; 
+} 
+ 
+&__phone{ 
+  position: absolute;
+  top: 16px;
+  left: 24px;
+} 
+ 
+&__house{ 
+   position: relative; 
+   max-width: 488px;  
+   border: 1px solid sandybrown;
+} 
+ 
+&__play{ 
+  width: 48px; 
+  height: 48px; 
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid transparent; 
+  border-radius: 50%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  position: absolute; 
+  left: 50%; 
+  top: 50%;
+} 
+ 
+&__sofa{ 
+  position: absolute; 
+  bottom: -43px; 
+  left: -40px;
+} 
+ 
+&__ekiban{ 
+  position: absolute; 
+  right: 124px; 
+  bottom: -43px; 
+} 
+ 
+&__chair{ 
+  position: absolute;  
+  bottom: -43px;  
+  right: 20px; 
+}  
+ 
+&__blot{ 
+  position: absolute;
+  top: -277px;
+  right: -137px; 
+  z-index: -5;
+}
 
 }
 
