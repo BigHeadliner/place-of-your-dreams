@@ -46,7 +46,18 @@ $(function () {
     $('.featured-inner__btn').removeClass('featured-inner__btn--active');
     $(this).addClass('featured-inner__btn--active'); 
  
- });
+ }); 
+  
+ $('.ready-to-sell__slider').slick({
+   dots: false,
+   arrows: false,
+   infinite: true,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   autoplay: true,
+   autoplaySpeed: 5000, 
+   pauseOnHover: true,
+});
 
 
 

@@ -467,7 +467,8 @@
  &__item{  
   border: 1px solid transparent;
   background: transparent; 
-  max-width: 340px; 
+  max-width: 340px;   
+  cursor: pointer;
  }  
   
  .slick-slider .slick-slide {
@@ -570,7 +571,11 @@
  
 } 
  
-.ready-to-sell{ 
+.ready-to-sell{  
+   
+  &__blot-field{  
+    position: relative;
+  }
    
   &__inner{  
     width: 100%;
@@ -583,7 +588,7 @@
    
   &__left{   
     width: 100%;
-    max-width: 522px;  
+    max-width: 529px;
     padding-left: 40px;
     border: 1px solid fuchsia; 
     padding-top: 28px;
@@ -632,7 +637,12 @@
    max-width: 220px; 
    display: flex; 
    align-items: center;
- }  
+ }   
+  
+ &__item--bath, 
+ &__item--floors{ 
+  padding-left: 14px;
+ }
   
  &__item-title{ 
    @extend %lexend-500; 
@@ -641,21 +651,20 @@
    color: #3C4563;
  }
   
- &__item-title--bed{ 
-  margin-left: 20px;
- } 
-
- &__item-title--garage{ 
-   margin-left: 23px;
+ &__item-title--bed,
+ &__item-title--bath, 
+ &__item-title--floors{ 
+  margin-left: 16px;
  }  
   
- &__item-title--bath{ 
-   margin-left: 21px;
- } 
-  
  &__item-title--floors{ 
-   margin-left: 20px;
- } 
+  margin-left: 25px;
+ }  
+  
+ &__item-title--garage{ 
+  margin-left: 18px;
+ }
+  
    
  &__contact{ 
   border: 1px solid transparent;  
@@ -746,15 +755,14 @@
   right: 20px; 
 }  
  
-&__blot{ 
+&__blot {
   position: absolute;
-  top: -277px;
-  right: -137px; 
+  top: -275px;
+  right: -17px;
   z-index: -5;
-}
+ } 
 
 }
-
  
 
 
