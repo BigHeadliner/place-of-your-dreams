@@ -43,7 +43,26 @@
         top: 9px;
       }
      
-    }
+    } 
+     
+    .majority-suptitle-alternative{     
+      @extend %lexend-500; 
+      font-size: 14px; 
+      line-height: 18px; 
+      color: $main-suptitle-color;
+      text-transform: capitalize;  
+      position: relative; 
+      &::before{ 
+        content: ''; 
+        width: 32px; 
+        height: 1px; 
+        background-color: $main-suptitle-color; 
+        position: absolute;
+        left: 30px;
+        top: -8px;
+      }
+     
+    } 
      
     .majority-title{   
       @extend %lexend-600; 

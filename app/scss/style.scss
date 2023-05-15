@@ -572,6 +572,7 @@
 } 
  
 .ready-to-sell{  
+  margin-bottom: 153px; 
    
   &__blot-field{  
     position: relative;
@@ -581,7 +582,7 @@
     width: 100%;
     max-width: 1200px;   
     margin: 0 auto; 
-    border: 1px solid pink; 
+    border: 1px solid transparent; 
     display: flex; 
     justify-content: space-between;
   }   
@@ -590,7 +591,7 @@
     width: 100%;
     max-width: 529px;
     padding-left: 40px;
-    border: 1px solid fuchsia; 
+    border: 1px solid transparent; 
     padding-top: 28px;
   }  
    
@@ -762,6 +763,144 @@
   z-index: -5;
  } 
 
+} 
+ 
+.review-inner{    
+   
+  .slick-slide {
+    margin: 0 28px;
+ } 
+  
+ .slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    margin-top: 5px; 
+ }  
+  
+ .slick-dots button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    font-size: 0;
+    background-color: #E0E3EB;
+    padding: 0;
+    margin: 0 8px; 
+    cursor: pointer;
+ }  
+   
+ .slick-dots .slick-active button {
+   background-color: #3C4563; 
+ }
+
+   &__slide{  
+     width: 100%;
+     max-width: 740px; 
+     padding-bottom: 124px;  
+     border: 1px solid transparent;
+   }  
+
+   &__slide-inner{ 
+     position: relative;   
+     width: 100%;
+     max-width: 740px;
+   }  
+
+   &__suptitle{ 
+     text-align: center; 
+     width: 109px; 
+     margin: 0 auto 12px;
+   } 
+    
+   &__title{ 
+    text-align: center; 
+    margin-bottom: 40px;
+   } 
+    
+   &__slide-banner{ 
+     width: 100%;
+     max-width: 612px; 
+     border-radius: 16px;  
+     padding: 32px;  
+     background: #FFF;  
+     box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
+     border: 1px solid transparent; 
+     position: absolute; 
+     left: 64px; 
+     bottom: -105px;
+   }  
+     
+   &__slide-img{ 
+     background:  #C4C4C4;
+    //  opacity: 0.7;
+     border-radius: 8px;
+   }
+    
+   &__slide-title{ 
+     @extend %lexend-600;  
+     font-size: 20px; 
+     line-height: 25px;  
+     text-transform: capitalize; 
+     color: $main-title-color; 
+     margin-bottom: 16px;
+   } 
+    
+   &__slide-text{ 
+     margin-bottom: 24px;
+   } 
+    
+   &__feedback{ 
+    border: 1px solid transparent;  
+    display: flex; 
+    justify-content: space-between;
+   }  
+    
+   &__rating{ 
+    border: 1px solid transparent;  
+    width: 100%;
+    max-width: 72px;  
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+   } 
+    
+   &__number{ 
+     @extend %lexend-600;  
+     font-size: 20px;
+     line-height: 28px; 
+     color: #3C4563;
+   }
+    
+   &__person{ 
+    border: 1px solid transparent; 
+    padding-left: 56px; 
+    position: relative;
+  } 
+   
+  &__person-img{ 
+   position: absolute; 
+   left: 0px; 
+   bottom: 5px;
+  } 
+  
+  &__person-title{ 
+   @extend %lexend-500; 
+   font-size: 18px; 
+   line-height: 24px; 
+   color:#0E1735; 
+   margin-bottom: 4px; 
+   text-transform: capitalize;
+  } 
+   
+  &__person-subtitle{ 
+   @extend %lexend-500; 
+   font-size: 14px; 
+   line-height: 22px; 
+   color:#888B97; 
+   text-transform: capitalize;
+  }   
+   
 }
  
 
