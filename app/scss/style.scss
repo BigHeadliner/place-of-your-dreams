@@ -677,14 +677,14 @@
 
  &__person{ 
   border: 1px solid transparent; 
-  padding-left: 56px; 
+  padding-left: 80px; 
   position: relative;
 } 
  
 &__person-img{ 
  position: absolute; 
  left: 0px; 
- bottom: 5px;
+ bottom: -2px;
 } 
 
 &__person-title{ 
@@ -874,7 +874,7 @@
     
    &__person{ 
     border: 1px solid transparent; 
-    padding-left: 56px; 
+    padding-left: 64px; 
     position: relative;
   } 
    
@@ -886,8 +886,8 @@
   
   &__person-title{ 
    @extend %lexend-500; 
-   font-size: 18px; 
-   line-height: 24px; 
+   font-size: 14px; 
+   line-height: 22px; 
    color:#0E1735; 
    margin-bottom: 4px; 
    text-transform: capitalize;
@@ -901,13 +901,27 @@
    text-transform: capitalize;
   }   
    
-} 
+}  
+ 
+ .find-more{ 
+   background-image:url('../images/blog/find-more.jpg'); 
+   background-repeat: no-repeat; 
+   background-position: left; 
+   max-width: 1470px; 
+   margin: 0 auto 122px;
+ }
  
 .blog{   
   width: 100%;
   max-width: 1200px; 
   margin: 0 auto; 
-  padding-top: 120px;   
+  padding-top: 120px;    
+   
+ &__main{ 
+  display: flex; 
+  justify-content: space-between; 
+  border: 1px solid transparent;
+ }
    
  &__suptitle{ 
   text-align: center;  
@@ -935,40 +949,95 @@
   display: block; 
   width: 118px;
 }   
-  
-&__left{  
+   
+&__left, 
+&__item{  
   width: 100%;
   max-width: 572px;
-} 
+}  
+ 
+&__item{   
+  border: 1px solid transparent; 
+  display: flex;  
+  justify-content: space-between; 
+  margin-bottom: 42px;
+}   
+
+&__item.blog__item--without-border{ 
+  margin-bottom: 0;
+}
+ 
+&__item-content{ 
+  border: 1px solid transparent;   
+  width: 100%;
+  max-width: 340px;
+}
  
 &__person{ 
   border: 1px solid transparent; 
   padding-left: 56px; 
-  position: relative;
+  position: relative; 
+  border: 1px solid transparent; 
+  margin: 3px 0 17px 0;
 } 
  
 &__person-img{ 
- position: absolute; 
- left: 0px; 
- bottom: 5px;
-} 
+  position: absolute;
+  left: 0px;
+  bottom: -3px; 
+}
+
 
 &__person-title{ 
- @extend %lexend-500; 
- font-size: 18px; 
- line-height: 24px; 
- color:#0E1735; 
- margin-bottom: 4px; 
- text-transform: capitalize;
-} 
- 
-&__person-subtitle{ 
- @extend %lexend-500; 
+ @extend %lexend-400; 
  font-size: 14px; 
  line-height: 22px; 
- color:#888B97; 
+ color:#3C4563;    
  text-transform: capitalize;
 }   
+ 
+&__item-title{ 
+  @extend %lexend-500;  
+  font-size: 18px; 
+  line-height: 32px; 
+  color:#1B1C57;
+}
+ 
+&__time-wrapper{ 
+  display: flex; 
+  align-items: center; 
+  border: 1px solid transparent;
+}  
+ 
+&__read-badge{ 
+  margin-right: 14px;
+}  
+ 
+&__read-time{ 
+ color:#888B97;  
+} 
+ 
+&__right{ 
+  border: 1px solid transparent;    
+  width: 100%;
+  max-width: 560px;
+} 
+ 
+&__right-img{ 
+  margin-bottom: 29px;
+} 
+ 
+&__right-title{ 
+  @extend %lexend-500;  
+  font-size: 24px; 
+  line-height: 32px;  
+  color:#1B1C57; 
+  margin-bottom: 12px;
+} 
+ 
+&__right-text{ 
+  margin-bottom: 16px;
+}
 
 }
  
