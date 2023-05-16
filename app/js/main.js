@@ -78,6 +78,8 @@ $("#star, #star-2, #star-3").rateYo({
      centerPadding: '60px',
  });
 
-
+ $('.subscribe__btn').on('click', function(e){ 
+  e.preventDefault();
+})   
 
 });  
