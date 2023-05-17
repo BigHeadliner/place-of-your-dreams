@@ -80,6 +80,28 @@ $("#star, #star-2, #star-3").rateYo({
 
  $('.subscribe__btn').on('click', function(e){ 
   e.preventDefault();
-})   
+});   
+
+$('.blog__btn').on('click', function(e){ 
+  e.preventDefault();
+});    
+ 
+$('.ready-to-sell__btn').on('click', function(e){ 
+  e.preventDefault();
+});   
+ 
+$('.header-inner__input-btn').on('click', function(e){ 
+  e.preventDefault();
+});     
+ 
+$("#subscribe__form").validate( 
+  {
+    errorPlacement: function(label, element) {
+        label.addClass('arrow');
+        label.insertAfter(element);
+    },
+    wrapper: 'span'
+}
+);
 
 });  

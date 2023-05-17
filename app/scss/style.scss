@@ -1052,7 +1052,8 @@
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center; 
-  position: relative;  
+  position: relative;   
+   
 
   &__title{ 
     line-height: 48px;  
@@ -1114,8 +1115,22 @@
     max-width: 496px; 
     margin: 0 auto 65px; 
     position: relative; 
-    border: 1px solid transparent;  
+    border: 1px solid transparent;   
+    position: relative;
+  }  
+   
+  .error{ 
+    color: #ef4444;  
+    font-size: 19px;
+    @extend %lexend-700; 
   } 
+   
+  .arrow{ 
+    margin-left: 75px; 
+    position: absolute;
+    left: 5px; 
+    bottom: -40px;
+  }
    
   &__input{  
     width: 100%;
