@@ -147,7 +147,11 @@
     margin-left: 93px; 
     display: flex;  
     border: 1px solid transparent; 
-    align-items: start;
+    align-items: start; 
+     
+    .menu__logo{ 
+      display: none;
+    }
 
     &__list {
         display: flex; 
@@ -170,6 +174,12 @@
           color:#047857;
         } 
       }
+    } 
+     
+    &__item:hover{  
+      .menu__link-arrow{ 
+        color:#047857;
+      } 
     }
 
     &__item + .menu__item {
@@ -178,9 +188,18 @@
 
     &__item.menu__item-submenu{ 
       margin-left: 0; 
-    }  
+    }   
      
-    &__link--arrow::after{ 
+    &__link-arrow {
+      @extend %lexend-600;
+      color: #F0F3FD;
+      font-size: 14px;
+      line-height: 18px;
+      transition: all .3s; 
+      display: block;
+   }    
+     
+    &__link-arrow::after{ 
       content:'';  
       width: 14px;
       height: 9px;
@@ -189,9 +208,10 @@
       background-repeat: no-repeat;    
       background-position:center; 
       background-size: cover; 
-      position: absolute; 
-      top: 12px; 
-      right: 15px; 
+      position: absolute;
+      top: 5px;
+      right: 9px;
+      
     }
 
     &__link {
@@ -201,7 +221,8 @@
         line-height: 18px;
         transition: all .3s; 
         display: block;
-     }    
+     }     
+      
     
    &__submenu {
       display: none;  
@@ -228,15 +249,21 @@
       border: 1px solid transparent; 
   }   
    
-  &__item--property:hover .menu__link--arrow::after{ 
+  &__item--property:hover .menu__link-arrow::after{ 
     background-image: url('../images/header/arrow-menu-open.svg'); 
  }  
 
   &__item--property{ 
     width: 122px; 
     padding: 7px 44px 7px 16px; 
-    display: block; 
-    position:relative;
+    display: block;  
+  } 
+   
+  &__link-arrow-wrapper{ 
+    position: relative;
+    border: 1px solid transparent;
+    width: 97px;
+    margin: 0 auto;
   }
  
   &__sing-up{ 

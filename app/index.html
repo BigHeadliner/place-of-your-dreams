@@ -51,14 +51,20 @@
 
         <div class="header-inner__right">
 
-          <nav class="menu">
+          <nav class="menu">  
+
+            <a class="menu__logo" href="#">
+              <img class="menu__logo-img" src="images/logo.svg" alt="logo">
+            </a> 
+             
+
             <button class="menu__btn" id="menu__btn">
               <span class="row-top"></span>
               <span class="row-middle"></span>
               <span class="row-bottom"></span>
             </button>
 
-            <ul class="menu__list">
+            <ul class="menu__list" id="menu__list">
 
               <li class="menu__item">
                 <a class="menu__link" href="#">About Us</a>
@@ -67,9 +73,9 @@
                 <a class="menu__link" href="#">Article</a>
               </li>
               <li class="menu__item menu__item--property">
-
-                <p class="menu__link menu__link--arrow">Property</p>
-
+                <div class="menu__link-arrow-wrapper">
+                 <p class="menu__link-arrow">Property</p>
+                </div>
                 <ul class="menu__submenu">
                   <li class="menu__item menu__item-submenu">
                     <a class="menu__link menu__link--submenu" href="#">House</a>
@@ -94,7 +100,7 @@
 
             <div class="header-inner__slider">
 
-              <div class="slide">
+              <div class="header-inner__slide-wrapper">
                 <div class="header-inner__slide-triple">
                   <img class="header-inner__slide-img header-inner__slide-img--customers"
                     src="images/header/slider/customers.png" alt="coustomers">
@@ -222,8 +228,8 @@
         </div>
       </div>
   </header>
-
-  <section class="featured">
+ 
+  <!-- <section class="featured">
     <div class="container">
       <div class="featured-inner">
         <div class="featured-inner__top">
@@ -559,7 +565,7 @@
 
          </div> 
       </div> 
-      <!-- SLIDE-2 --> 
+    
       <div class="ready-to-sell__slide">
         <div class="ready-to-sell__inner">  
 
@@ -636,7 +642,7 @@
 
         </div> 
      </div>  
-      <!-- SLIDE-3 --> 
+     
        
       <div class="ready-to-sell__slide">
         <div class="ready-to-sell__inner">  
@@ -1047,8 +1053,9 @@
   
       </div>
     </div>
-  </footer>
-  
+  </footer>  -->
+
+ 
   <script src="js/main.min.js"></script>
   </body>
   
