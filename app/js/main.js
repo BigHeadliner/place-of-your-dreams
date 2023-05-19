@@ -41,8 +41,8 @@ $(function () {
           variableWidth: true,
         }
       },
-    
-    ]
+    ] 
+
   });
   
 
@@ -55,7 +55,43 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    rows: 0,
+    rows: 0, 
+    responsive: [
+      {
+        breakpoint: 1315,
+        settings: {
+          infinite: false,
+          variableWidth: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: true,
+          rows: 0, 
+        }
+      }, 
+      {
+        breakpoint: 1115,
+        settings: {
+          infinite: false,
+          variableWidth: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true,
+          rows: 0, 
+        }
+      }, 
+       
+      {
+        breakpoint: 871,
+        settings: {
+          infinite: false,
+          variableWidth: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          rows: 0, 
+        }
+      },
+    ] 
   });
 
   $(".featured-inner__nav button").on('click', function () {
