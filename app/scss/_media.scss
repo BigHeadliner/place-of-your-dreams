@@ -183,7 +183,49 @@
         left: -60px;
     }
 
-  } 
+  }  
+   
+  @media(max-width:1070px) {
+
+      // READY TO SELL  
+
+      .ready-to-sell__slide {
+          margin-bottom: 90px;
+      }
+
+      .ready-to-sell__inner {
+          display: block;
+      }
+
+      .ready-to-sell__left {
+          max-width: 100%;
+          text-align: center;
+          margin-bottom: 34px; 
+          padding-left: 0;
+      }
+
+      .ready-to-sell__suptitle {
+          margin: 0 auto 14px;
+          max-width: 100px
+      }
+
+      .ready-to-sell__subtitle {
+          max-width: 100%;
+      }
+
+      .ready-to-sell__items {
+          margin: 0 auto 29px;
+      }
+
+      .ready-to-sell__contact {
+          margin: 0 auto;
+      } 
+       
+      .ready-to-sell__house {
+        margin: 0 auto;
+     }
+
+  }
    
   @media(max-width:870px) {   
      
@@ -315,9 +357,33 @@
       .header-inner__title {
         font-size: 33px;
         line-height: 47px;
-    }  
+    }   
+      
+    // READY TO SELL
+     
+    .ready-to-sell__left{ 
+        padding-left: 0;
+    }
 
-}    
+}      
+ 
+@media(max-width:585px){  
+     
+    // READY-TO-SELL
+     
+    .ready-to-sell__sofa {
+        display: none;
+    }  
+     
+    .ready-to-sell__chair{ 
+        display: none;
+    } 
+     
+    .ready-to-sell__ekiban{ 
+        display: none;
+    }
+
+}
  
 @media(max-width: 570px){       
      
@@ -332,7 +398,16 @@
     font-size: 15px;
  } 
  
+}  
+ 
+@media(max-width:525px){ 
+ 
+    .fancybox-slide { 
+        padding: 10px;
+    }  
+
 }
+
    
 @media(max-width: 500px){ 
    
@@ -363,6 +438,31 @@
      
     .header-inner__partner{ 
         margin: 0 15px;
+    } 
+     
+    // READY TO SELL
+
+    .ready-to-sell__person {
+        padding-left: 59px;
+    } 
+     
+    .ready-to-sell__person-title {
+        font-size: 15px; 
+    } 
+     
+    .ready-to-sell__person-subtitle {
+        font-size: 12px; 
+    } 
+     
+    .ready-to-sell__btn {
+        padding: 13px 15px 13px 37px; 
+        font-size: 12px;
+    } 
+     
+    .ready-to-sell__phone {
+        position: absolute;
+        top: 15px;
+        left: 13px;
     }
 } 
  
@@ -418,8 +518,54 @@
     position: absolute;
     top: -30px;
     right: 70px;
+  }   
+   
+ //  READY TO SELL 
+  
+  .ready-to-sell__title{ 
+    font-size: 30px;
+    line-height: 38px;
+  }
+   
+  .ready-to-sell__btn {
+    padding: 13px 15px 13px 13px;
+    font-size: 12px;
   } 
    
+  .ready-to-sell__phone {
+    display: none;
+   } 
+    
+   .ready-to-sell__person-title {
+    font-size: 13px;
+   }
+    
+   .ready-to-sell__person-subtitle {
+    font-size: 11px;
+   } 
+    
+   .ready-to-sell__item-title {
+    font-size: 14px; 
+   } 
+    
+   .ready-to-sell__item-title--bed,   
+   .ready-to-sell__item-title--bath,  
+   .ready-to-sell__item-title--floors {
+    margin-left: 10px; 
+  } 
+   
+  .ready-to-sell__item-title--floors {
+    margin-left: 15px;
+   } 
+    
+   .ready-to-sell__item-title--garage {
+    margin-left: 11px;
+   } 
+    
+   .ready-to-sell__subtitle {
+    font-size: 14px; 
+  }
+
 }
  
 @media(max-width:335px){     
@@ -454,6 +600,21 @@
      
     .featured-inner__price {
         margin-bottom: 4px;
+    } 
+     
+    // READY TO SELL
+
+    .ready-to-sell__btn {
+        padding: 13px 10px 13px 10px;
+        font-size: 12px;
+    } 
+     
+    .ready-to-sell__person-subtitle {
+        font-size: 10px;
+    } 
+     
+    .ready-to-sell__item-title {
+        font-size: 13px;
     }
 
 } 
