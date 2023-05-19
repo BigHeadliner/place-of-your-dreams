@@ -91,7 +91,7 @@ $(function () {
           rows: 0, 
         }
       },
-    ] 
+    ]  
   });
 
   $(".featured-inner__nav button").on('click', function () {
@@ -143,9 +143,26 @@ $("#star, #star-2, #star-3").rateYo({
      arrows: false,
      speed: 300, 
      variableWidth: true,
-     slidesToShow: 1,
+     slidesToScroll: 1,
      centerMode: true,  
-     centerPadding: '60px',
+     centerPadding: '60px',  
+      
+      responsive: [
+       {
+         breakpoint: 1038,
+         settings: {
+           dots: true, 
+           arrows: false,
+           speed: 300, 
+           variableWidth: false,
+           slidesToShow: 1, 
+           slidesToScroll: 1,
+           centerMode: false,  
+           centerPadding: '0px',  
+         }
+       },  
+     ]
+      
  });
 
  $('.subscribe__btn').on('click', function(e){ 

@@ -225,6 +225,27 @@
         margin: 0 auto;
      }
 
+  }  
+   
+  @media(max-width:1037px){ 
+      
+    // REVIEW INNER  
+
+    .review-inner__slider-wrapper {
+        border: 1px solid #f0f;
+        max-width: 799px;
+        margin: 0 auto;
+    }
+}
+   
+  @media(max-width:1029px){ 
+      
+    // REVIEW-INNER 
+
+    .review-inner__slider-wrapper{ 
+        border: 1px solid fuchsia;
+    }
+
   }
    
   @media(max-width:870px) {   
@@ -263,9 +284,84 @@
 
       .header-inner__right .menu__sing-up {
           margin-left: 0;
+      }  
+       
+      .review-inner__slide-banner{ 
+        border: 1px solid transparent;  
+        position: initial; 
+        margin: 0 auto;
       } 
+       
+       .review-inner__slide-inner{ 
+          max-width: 738px; 
+          height: 398px; 
+          background-image:url('../images/review/house-1.jpg'); 
+          background-repeat: no-repeat; 
+          background-position: center; 
+          background-size: cover;  
+         }   
+         
+         .review-inner__slide-inner--la{
+             background-image:url('../images/review/house-la-style.jpeg');  
+          }
 
-  } 
+        .review-inner__slide-inner--classic{ 
+         background-image:url('../images/review/house.jpg');  
+         }
+
+      .slick-slide .review-inner__slide-img{ 
+          display: none;
+       } 
+       
+       .review-inner__slide{ 
+         padding-bottom: 0;
+       }  
+       
+       .review-inner__slide-inner{  
+         display: flex; 
+         flex-direction: column; 
+         justify-content: flex-end;
+       } 
+        
+       .review-inner__slide-banner{ 
+        background-color: transparent;  
+        background-color: 00FFFFFF; 
+        background: rgba(255,255,255,.5);
+       } 
+        
+       .review-inner__slide-text{ 
+         color:#1b1c57; 
+       } 
+        
+       .review-inner__person-title, 
+       .review-inner__person-subtitle{   
+         color:#1b1c57; 
+       }
+
+  }  
+   
+  @media(max-width: 750px) { 
+ 
+    .review-inner__slide-banner{ 
+      position: relative; 
+    }  
+     
+    .review-inner__slide-banner{ 
+        position: absolute; 
+        top:0;  
+        bottom:0;
+        left:0; 
+        right:0; 
+        max-width: 100%; 
+        border-radius:0; 
+        padding: 140px 25px 25px 25px;
+    } 
+     
+    .review-inner .slick-slide {
+        margin: 0px;
+    }
+
+  }
    
   @media(max-width: 700px) {
 
@@ -365,26 +461,42 @@
         padding-left: 0;
     }
 
-}      
+}       
  
-@media(max-width:610px){  
-     
+@media(max-width:650px) {
+
+    // REVIEVS-INNER      
+
+    .review-inner__slide-banner {
+        padding: 125px 25px 25px 25px;
+    }
+
+}
+ 
+@media(max-width:610px) {
+
     // READY-TO-SELL
-     
- .slick-slide .ready-to-sell__sofa {
+
+    .slick-slide .ready-to-sell__sofa {
         display: none;
-    }  
-     
- .slick-slide .ready-to-sell__chair{ 
+    }
+
+    .slick-slide .ready-to-sell__chair {
         display: none;
-    } 
-     
- .slick-slide .ready-to-sell__ekiban{ 
+    }
+
+    .slick-slide .ready-to-sell__ekiban {
         display: none;
-    } 
-     
+    }
+
     .ready-to-sell__slide {
         margin-bottom: 0px;
+    }
+
+    // REVIEVS-INNER 
+
+    .review-inner__slide-banner {
+        padding: 107px 25px 25px 25px;
     }
 
 }
@@ -401,14 +513,32 @@
     padding: 10px 15px 10px 10px;
     font-size: 15px;
  } 
+   
+//  REVIEWS-INNER  
+ 
+.review-inner__suptitle {
+    margin: 0 auto 9px;
+}
+
+ .review-inner__title {
+    text-align: center;
+    margin-bottom: 21px; 
+    font-size: 30px;
+ }
  
 }  
  
-@media(max-width:525px){ 
- 
-    .fancybox-slide { 
+@media(max-width:525px) {
+
+    .fancybox-slide {
         padding: 10px;
-    }  
+    }
+
+    // REVIEW-INNER      
+
+    .review-inner__slide-banner {
+        padding: 87px 25px 25px 25px;
+    }
 
 }
 
@@ -467,6 +597,12 @@
         position: absolute;
         top: 15px;
         left: 13px;
+    }  
+     
+    // REVIEW-INNER
+     
+    .review-inner__slide-banner {
+        padding: 87px 15px 15px 25px;
     }
 } 
  
@@ -493,6 +629,25 @@
         padding: 10px 7px;
         font-size: 14px;
         text-align: center;
+    } 
+      
+    // REVIEWS-INNER 
+
+    .review-inner__slide-banner {
+        padding: 73px 10px 10px 25px;
+    } 
+     
+    .review-inner__person {
+        padding-left: 45px;
+    }  
+
+    .review-inner__person-title {
+        font-size: 13px;  
+        margin-bottom: 0;
+    } 
+     
+    .review-inner__person-subtitle {
+        font-size: 11px; 
     }
      
 }  
@@ -570,6 +725,16 @@
     font-size: 14px; 
   }
 
+} 
+ 
+@media(max-width:350px){  
+    
+    // REVIES-INNER
+
+    .review-inner__slide-banner {
+        padding: 67px 10px 10px 10px;
+    }
+
 }
  
 @media(max-width:335px){     
@@ -619,6 +784,12 @@
      
     .ready-to-sell__item-title {
         font-size: 13px;
+    } 
+       
+    // REVIEW-INNER
+
+    .review-inner__slide-banner {
+        padding: 47px 10px 10px 10px;
     }
 
 } 
@@ -635,6 +806,12 @@
 
    .featured-inner__title-box {
     margin-bottom: 25px;
-  } 
+  }  
+    
+  // REVIEW-INNER 
+
+  .review-inner__slide-banner {
+    padding: 67px 10px 10px 10px;
+   }
    
 }
