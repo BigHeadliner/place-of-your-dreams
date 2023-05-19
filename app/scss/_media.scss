@@ -367,20 +367,24 @@
 
 }      
  
-@media(max-width:585px){  
+@media(max-width:610px){  
      
     // READY-TO-SELL
      
-    .ready-to-sell__sofa {
+ .slick-slide .ready-to-sell__sofa {
         display: none;
     }  
      
-    .ready-to-sell__chair{ 
+ .slick-slide .ready-to-sell__chair{ 
         display: none;
     } 
      
-    .ready-to-sell__ekiban{ 
+ .slick-slide .ready-to-sell__ekiban{ 
         display: none;
+    } 
+     
+    .ready-to-sell__slide {
+        margin-bottom: 0px;
     }
 
 }
@@ -531,8 +535,8 @@
     padding: 13px 15px 13px 13px;
     font-size: 12px;
   } 
-   
-  .ready-to-sell__phone {
+
+  .slick-slide .ready-to-sell__phone {
     display: none;
    } 
     
@@ -631,5 +635,6 @@
 
    .featured-inner__title-box {
     margin-bottom: 25px;
-  }
+  } 
+   
 }

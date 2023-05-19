@@ -748,7 +748,7 @@
 &__house{ 
    position: relative; 
    max-width: 488px;  
-   border: 1px solid sandybrown;
+   border: 1px solid transparent;
 } 
  
 &__play{ 
@@ -760,9 +760,12 @@
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  position: absolute; 
-  left: 50%; 
-  top: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 } 
  
 &__sofa{ 

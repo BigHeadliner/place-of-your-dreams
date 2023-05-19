@@ -118,16 +118,16 @@ $(function () {
  
  }); 
   
-  //  $('.ready-to-sell__slider').slick({
-  //    dots: false,
-  //    arrows: false,
-  //    infinite: true,
-  //    slidesToShow: 1,
-  //    slidesToScroll: 1,
-  //    autoplay: true,
-  //    autoplaySpeed: 5000, 
-  //    pauseOnHover: true,
-  // }); 
+    $('.ready-to-sell__slider').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000, 
+      pauseOnHover: true,
+   }); 
  
 $("#star, #star-2, #star-3").rateYo({  
   numStars: 1,
