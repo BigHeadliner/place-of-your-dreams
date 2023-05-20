@@ -265,7 +265,16 @@
        
       .ready-to-sell__house {
         margin: 0 auto;
-     }
+     } 
+       
+    //  SUBSCRIBE 
+     
+    .subscribe__decor-2, 
+    .subscribe__decor-4,  
+    .subscribe__decor-5, 
+    .subscribe__decor-7{ 
+       display: none;
+    } 
 
   }  
    
@@ -380,7 +389,17 @@
          color:#1b1c57; 
        }
 
-  }  
+  }   
+   
+  @media(max-width: 800px){  
+
+     //  SUBSCRIBE   
+
+   .subscribe__decor-8{ 
+      display: none;
+     }
+  
+  }
    
   @media(max-width: 750px) { 
  
@@ -401,6 +420,14 @@
      
     .review-inner .slick-slide {
         margin: 0px;
+    } 
+     
+      //  SUBSCRIBE    
+       
+    .subscribe__decor-1, 
+    .subscribe__decor-6,
+    .subscribe__decor-3{ 
+        display: none;
     }
 
   }
@@ -501,6 +528,18 @@
      
     .ready-to-sell__left{ 
         padding-left: 0;
+    } 
+     
+     //  SUBSCRIBE     
+      
+     .subscribe__title {
+        line-height: 35px;
+        margin: 46px auto 25px;  
+        font-size: 27px;
+    }   
+     
+    .subscribe__form {
+        margin: 0 auto 45px; 
     }
 
 }       
@@ -634,7 +673,14 @@
      
     .blog__time-wrapper.blog__time-wrapper--right{
         position: initial;
-    }
+    }  
+      
+    // SUBSCRIBE 
+
+   .subscribe{ 
+     border:1px solid transparent; 
+     padding: 0 10px;
+   }
 
 }
  
@@ -648,7 +694,20 @@
 
     .review-inner__slide-banner {
         padding: 87px 25px 25px 25px;
-    } 
+    }  
+     
+    // SUBSCRIBE 
+     
+    .subscribe__title {
+        line-height: 27px;
+        margin: 34px auto 23px;
+        font-size: 21px; 
+     } 
+      
+     .subscribe .error {
+        color: #ef4444;
+        font-size: 14px;
+    }
      
 }
 
@@ -691,6 +750,26 @@
      
     .blog__person-title {
         font-size: 13px; 
+    } 
+      
+    // SUBSCRIBE 
+
+    .subscribe .arrow {
+        margin-left: 75px;
+        position: absolute;
+        left: 5px;
+        bottom: -30px;
+    } 
+     
+    .subscribe__btn {
+        width: 115px;
+        height: 46px;
+        font-size: 14px; 
+        font-size: 12px;
+    } 
+     
+    .subscribe__input {
+        padding: 16px 123px 16px 64px; 
     }
 }
 
@@ -803,9 +882,55 @@
      
     .blog__person {
         margin: 10px 0 9px 0;
+    }  
+     
+    // SUBSCRIBE
+     
+    .subscribe .arrow {
+        margin-left: 49px;
+    }  
+     
+    .subscribe__input {
+        padding: 16px 105px 16px 53px;
     }
+     
+    .subscribe__btn {
+        width: 98px;
+        height: 46px;
+        font-size: 12px;
+    } 
+     
 }
+  
+
+@media(max-width: 400px){   
  
+ //  SUBSCRIBE 
+
+  .subscribe__input-decor{ 
+    display:none;
+  } 
+
+  .subscribe__input {
+    padding: 16px 79px 16px 17px;
+  }
+   
+  .subscribe__btn-text{ 
+    display: none;
+  } 
+   
+  .subscribe__btn-decor{ 
+    display: block; 
+    margin: 0 auto;
+  } 
+   
+  .subscribe__btn {
+    width: 73px;
+    height: 46px;
+  }
+
+} 
+
   
 @media(max-width: 385px){  
      
@@ -848,6 +973,16 @@
      
     .review-inner__person-subtitle {
         font-size: 11px; 
+    } 
+       
+    // SUBSCRIBE  
+
+    .subscribe .arrow {
+        margin-left: 31px;
+    } 
+     
+    .subscribe .error {
+        font-size: 11px;
     }
      
 }  
@@ -933,6 +1068,12 @@
 
     .review-inner__slide-banner {
         padding: 67px 10px 10px 10px;
+    } 
+     
+    .subscribe__title {
+        line-height: 27px;
+        margin: 21px auto 15px;
+        font-size: 18px; 
     }
 
 }
@@ -990,6 +1131,17 @@
 
     .review-inner__slide-banner {
         padding: 47px 10px 10px 10px;
+    } 
+      
+    // SUBSCRIBE 
+
+    .subscribe__btn {
+        width: 58px;
+        height: 46px;
+    } 
+     
+    .subscribe__input {
+        padding: 16px 63px 16px 17px;
     }
 
 } 
